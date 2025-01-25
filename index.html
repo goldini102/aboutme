@@ -18,6 +18,9 @@
       background-size: 400% 400%;
       animation: gradientShift 8s ease infinite;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
@@ -30,9 +33,21 @@
       height: auto;
       margin: 0;
     }
+    .row {
+      display: flex;
+      width: 100%;
+    }
+    .half-blinkie {
+      width: 50%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
-  <img src="https://plasticdino.neocities.org/blinkie/republican.gif" alt="Blinkie" class="blinkie">
+  <img src="https://plasticdino.neocities.org/blinkie/republican.gif" alt="Blinkie 1" class="blinkie">
+  <div class="row">
+    <img src="https://blinkies.cafe/b/blinkiesCafe-GL.gif" alt="Blinkie 2" class="half-blinkie">
+    <img src="https://blinkies.cafe/b/blinkiesCafe-fr.gif" alt="Blinkie 3" class="half-blinkie">
+  </div>
 </body>
 </html>
