@@ -5,62 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About goldini102</title>
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(135deg, 
-        #000000, #0A0A0A, #141414, #1F1F1F, 
-        #292929, #000000);
-      background-size: 400% 400%;
-      animation: backgroundShift 10s ease infinite;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    @keyframes backgroundShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .gradient-text {
-      font-size: 48px;
-      font-weight: bold;
-      text-transform: uppercase;
-      background: linear-gradient(
-        to left, 
-        #FFD700, #FFC107, #FFB300, #FFA000, 
-        #FF8F00, #FF6F00, #E6AC00, #C69200, 
-        #FFD700, #FFB300, #FFA000, #FF6F00
-      );
-      background-size: 300% 100%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textGradient 15s linear infinite;
-      margin-top: 20px;
-    }
-    @keyframes textGradient {
-      0% { background-position: 150% 0; }
-      100% { background-position: -50% 0; }
-    }
-    .blinkie {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      border: 5px solid black;
-    }
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, 
+      #000000, #0A0A0A, #141414, #1F1F1F, 
+      #292929, #000000);
+    background-size: 400% 400%;
+    animation: backgroundShift 10s ease infinite;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .blinkie {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 5px solid black;
+  }
+  .row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .half-blinkie {
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    margin-bottom: 10px;
+  }
+  .gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to left, 
+      #FFD700, #FFC107, #FFB300, #FFA000, 
+      #FF8F00, #FF6F00, #E6AC00, #C69200, 
+      #FFD700, #FFB300, #FFA000, #FF6F00
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradient 15s linear infinite;
+    margin-top: 20px;
+  }
+  @keyframes textGradient {
+    0% { background-position: 150% 0; }
+    100% { background-position: -50% 0; }
+  }
+  @media (min-width: 768px) {
     .row {
-      display: flex;
-      width: 100%;
+      flex-direction: row;
     }
     .half-blinkie {
       width: 50%;
-      height: auto;
-      border: 5px solid black;
     }
-  </style>
+    .gradient-text {
+      font-size: 72px;
+    }
+  }
+</style>
 </head>
 <body>
   <img src="https://blinkies.cafe/b/blinkiesCafe-0S.gif" alt="NEVER💙" class="blinkie">
