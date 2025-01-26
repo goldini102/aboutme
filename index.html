@@ -9,20 +9,16 @@
       margin: 0;
       height: 100vh;
       background: linear-gradient(135deg, 
-        #FFD700, 
-        #FFC107, 
-        #FFB300, 
-        #FFA000, 
-        #FF8F00, 
-        #FF6F00);
+        #000000, #111111, #222222, #333333, 
+        #444444, #555555, #666666, #000000);
       background-size: 400% 400%;
-      animation: gradientShift 8s ease infinite;
+      animation: backgroundShift 10s ease infinite;
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    @keyframes gradientShift {
+    @keyframes backgroundShift {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
@@ -33,25 +29,27 @@
       text-transform: uppercase;
       background: linear-gradient(
         to left, 
-        #000000, #111111, #222222, #333333, 
-        #444444, #555555, #666666, #777777, 
-        #888888, #999999, #222222, #000000
+        #FFD700, #FFC107, #FFB300, #FFA000, 
+        #FF8F00, #FF6F00, #E6AC00, #C69200, 
+        #FFD700, #FFB300, #FFA000, #FF6F00
       );
-      background-size: 2000% 100%;
+      background-size: 300% 100%;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: textGradient 12s linear infinite;
+      animation: textGradient 15s linear infinite;
+      margin-top: 20px;
     }
     @keyframes textGradient {
-      0% { background-position: 100% 0; }
-      100% { background-position: 0% 0; }
+      0% { background-position: 150% 0; }
+      100% { background-position: -50% 0; }
     }
     .blinkie {
       display: block;
       width: 100%;
       height: auto;
       margin: 0;
+      border: 1px solid black;
     }
     .row {
       display: flex;
@@ -60,6 +58,7 @@
     .half-blinkie {
       width: 50%;
       height: auto;
+      border: 1px solid black;
     }
   </style>
 </head>
