@@ -27,6 +27,21 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+    .gradient-text {
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: linear-gradient(to left, #000000, #222222, #444444, #000000);
+      background-size: 300%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textGradient 3s infinite linear;
+    }
+    @keyframes textGradient {
+      0% { background-position: 100% 0; }
+      100% { background-position: 0% 0; }
+    }
     .blinkie {
       display: block;
       width: 100%;
@@ -49,5 +64,6 @@
     <img src="https://blinkies.cafe/b/blinkiesCafe-w7.gif" alt="FDT!!!" class="half-blinkie">
     <img src="https://blinkies.cafe/b/blinkiesCafe-iK.gif" alt="Dumbass Nazi" class="half-blinkie">
   </div>
+  <h1 class="gradient-text">Trevor (goldini102)'s Social Links</h1>
 </body>
 </html>
