@@ -61,6 +61,36 @@
       border: 1px solid black;
       box-sizing: border-box;
     }
+    .gold-button {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      background: linear-gradient(90deg, #FFD700, #B8860B);
+      background-size: 200% 100%;
+      border: 2px solid black;
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+      animation: flashGold 1s infinite alternate;
+    }
+    .gold-button img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .gold-button:hover {
+      transform: scale(1.05);
+    }
+    @keyframes flashGold {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
   </style>
 </head>
 <body>
@@ -70,5 +100,9 @@
     <img src="https://i.postimg.cc/6qxLTwk0/blinkies-Cafe-FN.gif" alt="Dumbass Nazi" class="half-blinkie">
   </div>
   <h1 class="gradient-text">Trevor (goldini102)'s Social Links</h1>
+  <a href="https://www.snapchat.com/add/goldini102?share_id=GAivuL4BR6g&locale=en-US" class="gold-button">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI5jvTqOh-bw-ivgqj2igxf_xspuocaF3L2A&s" alt="Snap Icon">
+    Snapchat
+  </a>
 </body>
 </html>
