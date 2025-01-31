@@ -96,6 +96,35 @@
       0% { background-position: 0% 50%; }
       100% { background-position: 100% 50%; }
     }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 15px 0;
+      background: black;
+      position: relative;
+      bottom: 0;
+      margin-top: 20px;
+    }
+
+    .footer-text {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #FFD700, #B8860B);
+      background-size: 200% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: flashGold 2s infinite alternate;
+      margin: 0 15px;
+    }
+
+    .footer-img {
+      width: 50px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -153,5 +182,10 @@
     <img src= "https://play-lh.googleusercontent.com/0zLmtfYrahpx4eHOLFPuDWBQqSVT6Faa0FUfvrcSQhltwZvAYFYfsuUHJPZSoWh-TA=w240-h480-rw" alt="Daze Icon">
     Join Daze <3
   </a>
+  <footer class="footer">
+    <img src="https://plasticdino.neocities.org/blinkie/htmlblinkie.gif" alt="HTML/CSS >>>>>" class="footer-img">
+    <span class="footer-text">©goldini102 2025. All rights reserved.</span>
+    <img src= "https://plasticdino.neocities.org/blinkie/alwaysunderconstr.gif" alt="Always improving <3" class="footer-img">
+  </footer>
 </body>
 </html>
