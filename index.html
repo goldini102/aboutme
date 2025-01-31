@@ -64,7 +64,15 @@
       border: 1px solid black;
       box-sizing: border-box;
     }
-    @media (min-width: 1800px) {
+
+.blinkie, .half-blinkie {
+  max-width: 100%;
+  height: auto;
+}
+.blinkie-container {
+  display: none;
+}
+@media (min-width: 768px) {
   .blinkie, .half-blinkie {
     display: none;
   }
@@ -78,7 +86,7 @@
     width: 30%;
     height: auto;
   }
-    }
+}
     .gold-button {
       display: flex;
       align-items: center;
